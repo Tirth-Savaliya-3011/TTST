@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The TrackSide Tadka | Train-Themed Vegetarian Restaurant in Rajkot</title>
     <meta name="description" content="Welcome to The TrackSide Tadka, Rajkot's unique train-themed family restaurant. Enjoy delicious 100% pure vegetarian North Indian, South Indian, and Indo-Chinese cuisine.">
+    <meta name="description" content="The TrackSide Tadka Restaurant serves delicious South Indian, North Indian, Chinese, and fast food in Rajkot. Order online or visit today.">
+    <meta name="keywords" content="TTST Restaurant, restaurant in Rajkot, South Indian food, North Indian food, Chinese food, family restaurant, best restaurant">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -467,73 +469,6 @@
         </div>
     </section>
 
-    <!-- Book A Table / Reservation -->
-    <section id="book" class="py-20 relative bg-brand-dark overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-20">
-            <img src="F-ktxbJXsAABFFg.jpg" class="w-full h-full object-cover">
-        </div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-2">Reserve Your Table</h2>
-                    <p class="text-gray-600">Book your culinary journey with us today.</p>
-                </div>
-                
-                <form id="reservation-form" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none transition" placeholder="John Doe">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                            <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none transition" placeholder="+91 00000 00000">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Date</label>
-                            <input type="date" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none transition">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Time</label>
-                            <select required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none transition bg-white">
-                                <option value="" disabled selected>Select Time</option>
-                                <optgroup label="Lunch">
-                                    <option>11:00 AM</option>
-                                    <option>12:00 PM</option>
-                                    <option>1:00 PM</option>
-                                    <option>2:00 PM</option>
-                                </optgroup>
-                                <optgroup label="Dinner">
-                                    <option>7:00 PM</option>
-                                    <option>8:00 PM</option>
-                                    <option>9:00 PM</option>
-                                    <option>10:00 PM</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div class="md:col-span-2">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Number of Guests</label>
-                            <select required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none transition bg-white">
-                                <option>1 Person</option>
-                                <option>2 People</option>
-                                <option selected>3 People</option>
-                                <option>4 People</option>
-                                <option>5+ People</option>
-                                <option>Group/Party</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="w-full bg-brand-red text-white py-4 rounded-lg font-bold text-lg hover:bg-red-800 transition duration-300 shadow-lg">Confirm Reservation</button>
-                </form>
-                
-                <!-- Success Message (Hidden by default) -->
-                <div id="success-msg" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-lg text-center font-medium">
-                    <i class="fa-solid fa-check-circle mr-2"></i> Thank you! Your table request has been received. We will call you to confirm.
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact & Footer -->
     <footer id="contact" class="bg-brand-dark pt-20 border-t-4 border-brand-gold text-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
@@ -633,24 +568,6 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
-        });
-
-        // Handle Reservation Form Submission (Mock)
-        const form = document.getElementById('reservation-form');
-        const successMsg = document.getElementById('success-msg');
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // In a real scenario, this would be sent to a backend
-            
-            // Show success message
-            successMsg.classList.remove('hidden');
-            form.reset();
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                successMsg.classList.add('hidden');
-            }, 5000);
         });
 
         // Smooth scroll for anchor links (safeguard for older browsers, though CSS handles most)
